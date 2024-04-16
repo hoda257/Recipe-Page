@@ -1,0 +1,179 @@
+/* General Rules */
+:root {
+    --big-content-gap: 20px;
+    --small-content-gap: 10px;
+    --nutmeg-color: hsl(14, 45%, 36%);
+    --raspberry-color: hsl(332, 51%, 32%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Young Serif";
+    src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url('../assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit";
+}
+
+h1,
+h2 {
+    font-family: "Young Serif";
+    font-weight: 400;
+}
+
+/* ------------------------------------------------ */
+
+main {
+    background-color: hsl(0, 0%, 100%);
+    padding: 35px;
+    border-radius: 20px;
+    width: 40%;
+    min-width: 500px;
+    margin: 80px auto 40px;
+}
+
+@media (max-width:767px) {
+    main {
+        margin: 0;
+        min-width: 100%;
+        border-radius: 0;
+    }
+}
+
+/* Header */
+header img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin: var(--big-content-gap) 0;
+}
+
+p,
+li {
+    line-height: 1.5;
+    color: hsl(24, 5%, 18%);
+}
+
+/* ------------------------------------------------ */
+
+/* Common in all sections */
+section li {
+    margin-left: 25px;
+    padding: 0 var(--small-content-gap);
+}
+
+section li:not(:last-child) {
+    margin-bottom: var(--small-content-gap);
+}
+
+li span {
+    font-weight: 700;
+}
+
+/* ------------------------------------------------ */
+
+/* Section 1: Preparation Time */
+.preparation-time {
+    margin: var(--big-content-gap) 0;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    padding: var(--big-content-gap);
+}
+
+.preparation-time h3 {
+    color: var(--raspberry-color);
+    margin-bottom: var(--small-content-gap);
+}
+
+.preparation-time li::marker {
+    color: var(--raspberry-color);
+}
+
+/* ------------------------------------------------ */
+
+/* Common in section 2 and 3 */
+
+.ingredients,
+.instructions {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    margin-bottom: var(--big-content-gap);
+    padding-bottom: var(--big-content-gap);
+}
+
+section:not(:first-child) h2 {
+    margin-bottom: var(--big-content-gap);
+    color: var(--nutmeg-color);
+}
+
+section:not(:first-child) li::marker {
+    color: var(--nutmeg-color);
+    font-weight: 600;
+}
+
+/* ------------------------------------------------ */
+
+/* Section 3: Nutrition */
+.nutrition {
+    margin-bottom: 0;
+}
+
+.nutrition table {
+    width: 100%;
+    margin-top: var(--big-content-gap);
+    border-collapse: collapse;
+}
+
+.nutrition table tr td {
+    padding: var(--small-content-gap) 0 var(--small-content-gap) var(--big-content-gap);
+}
+
+.nutrition table tr td:last-child {
+    font-weight: 700;
+    color: var(--nutmeg-color)
+}
+
+.nutrition table tr:not(:last-child) {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+/* ------------------------------------------------ */
+
+/* Footer */
+
+.attribution {
+    margin-bottom: 40px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--raspberry-color);
+}
+
+
+@media (max-width:767px) {
+    .attribution {
+        display: none;
+    }
+}
+
+/* ------------------------------------------------ */
