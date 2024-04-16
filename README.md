@@ -1,5 +1,5 @@
 # Social Links Profile
-![Design preview for the Blog preview card coding challenge](/assets/design/design-image.JPG)
+![Design preview for the Blog preview card coding challenge](./assets/design/design-image.jpg)
 
 
 ## Built with
