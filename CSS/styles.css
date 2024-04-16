@@ -147,8 +147,6 @@ section:not(:first-of-type) li::marker {
 
 .nutrition table tr td {
     padding: var(--small-content-gap) 0 var(--small-content-gap) var(--big-content-gap);
-    font-weight: 600;
-
 }
 
 .nutrition table tr td:last-child {
