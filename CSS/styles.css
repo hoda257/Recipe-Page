@@ -38,6 +38,14 @@ h2 {
     font-weight: 400;
 }
 
+
+p,
+li {
+    line-height: 1.5;
+    color: hsl(24, 5%, 18%);
+}
+
+
 /* ------------------------------------------------ */
 
 main {
@@ -65,12 +73,6 @@ header img {
 
 header h1 {
     margin: var(--big-content-gap) 0;
-}
-
-p,
-li {
-    line-height: 1.5;
-    color: hsl(24, 5%, 18%);
 }
 
 /* ------------------------------------------------ */
@@ -144,6 +146,8 @@ section:not(:first-child) li::marker {
 
 .nutrition table tr td {
     padding: var(--small-content-gap) 0 var(--small-content-gap) var(--big-content-gap);
+    font-weight: 600;
+
 }
 
 .nutrition table tr td:last-child {
